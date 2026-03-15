@@ -1,7 +1,7 @@
 import numpy as np
 
 # Number of races to simulate
-N_SIMULATIONS = 10000
+N_SIMULATIONS = 100000
 
 # Safety car probability at Shanghai
 SAFETY_CAR_PROBABILITY = 0.35
