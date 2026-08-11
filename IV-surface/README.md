@@ -37,6 +37,7 @@ IV-surface/
   plots.py              # Plotly figures: 3D surface, smile, term structure
   main.py                 # One shot pipeline: pull data, solve, plot, export CSVs
   live_surface.py           # Live polling version with a matplotlib UI
+  app.py                     # Dash web dashboard (in progress, see below)
   requirements.txt
   .env.example
 ```
@@ -66,11 +67,22 @@ term structure), then saves the price and implied vol grids to CSV:
 python main.py
 ```
 
-**Live version**, polls the market every 30 seconds and redraws a dark themed
+**Live version**, polls the market every 5 seconds and redraws a dark themed
 3D surface with a front month skew panel, with a lock button to freeze the view:
 ```bash
 python live_surface.py
 ```
+
+## Dashboard (in progress)
+
+A Dash web dashboard (`app.py`) is in development: symbol picker, auto-refresh,
+the same 3D surface / smile / term structure plots rendered in-browser, and a
+live price table. Core pieces work, but it's not yet a finished, polished
+release -- expect rough edges. To try it:
+```bash
+python app.py
+```
+then open the local URL it prints (defaults to `http://127.0.0.1:8050`).
 
 ## Notes on data quality
 

@@ -3,5 +3,6 @@ pandas
 scipy
 plotly
 matplotlib
+dash
 alpaca-py
 python-dotenv
