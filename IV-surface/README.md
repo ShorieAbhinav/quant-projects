@@ -67,8 +67,9 @@ term structure), then saves the price and implied vol grids to CSV:
 python main.py
 ```
 
-**Live version**, polls the market every 5 seconds and redraws a dark themed
-3D surface with a front month skew panel, with a lock button to freeze the view:
+**Live version**, polls the market every 5 seconds and redraws a dark themed,
+spline smoothed 3D surface (raw solved points overlaid as markers) with a
+front month skew panel, with a lock button to freeze the view:
 ```bash
 python live_surface.py
 ```

@@ -84,7 +84,7 @@ def plot_smile(symbol, S0, implied_surface):
                 x=implied_surface.index.to_numpy(dtype=float),
                 y=(implied_surface[t].to_numpy(dtype=float) * 100.0),
                 mode="lines+markers",
-                name=f"Time to maturity = {float(t):.2f} years",
+                name=f"Time to maturity = {float(t):.4f} years",
             )
         )
     fig.add_vline(x=S0, line_dash="dash", line_color="white")
